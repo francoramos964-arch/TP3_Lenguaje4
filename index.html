@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3 - Carga de Archivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <p>Seleccionar Imagen:</p>
+        <!-- Input de archivo oculto para controlarlo con el botón -->
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        <button id="btnSubir">Subir Archivo</button>
+    </div>
+
+    <div class="card info-card" id="infoCard" style="display: none;">
+        <p id="nombreArchivo"></p>
+        <p id="tamanoArchivo"></p>
+        <div id="previewContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
